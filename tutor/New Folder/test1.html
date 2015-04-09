@@ -1,0 +1,521 @@
+
+
+<html>
+<head>
+<title>C Programming Tutorial</title>
+<script src="valid.js"> </script>
+<link rel="stylesheet" type="text/css" href="design.css" />
+<link rel="stylesheet" type="text/css" href="design2.css" />
+</head>
+<body onload="currentTime()" >
+
+<div id="top">
+	<div style="height:100px;">
+	       <div id="logo">
+	       <a id="top"></a>	
+               <a href="login.php"><img width="100" height="90" src="c.gif" alt="index" style="border:0;margin-top:5px;" /></a>
+	       </div>
+		
+		<b style={float:right;padding-right:100px;padding-top:40px;}>Starting Time: <b id="time1"></b> </b>
+                <b style={float:right;padding-right:0px;padding-top:60px;}>Closinging Time: <b id="time2"></b> </b>
+	</div>
+	
+        <div id="header">
+		<div id="headerTutorial">
+			<a class="header" href="login.php" target="_top">HOME</a>
+                        <a class="header" href="chapters.php" target="_top">CHAPTERS</a>
+			<a class="header" href="test.php" target="_top">TEST</a>
+			<a class="header" href="query.php" target="_top">QUERY</a>
+		</div>
+		<div id=headerAbout>
+			<a class="header" href="" target="_top">REFERENCES</a> |
+			<a class="header" href="" target="_top">FORUM</a> |
+			<a class="header" href="" target="_top">ABOUT</a> |
+			<a class="header" href="" target="_top">CONTACT</a>
+		</div>
+        </div>
+	<div id="page">	
+    
+        <div id="main" style={height:9880;width:1097;background-color:#000000;}>
+            <form action="result1.php" method="post">
+                
+            <div id="box">
+                
+                    
+		<h1><span class="color_h1"> C </span>Programming Test 1</h1>
+                <br>
+                   <p>&nbsp1.<span class="space">What is the output of the following C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                    void main()
+                    {
+                        float a=5,b=2;
+                        int c;
+                        c =a%b;
+                       printf(“c=%d”,c);
+                    }
+
+                    </code></pre>
+                    <br>
+                    <input class="loc1" type='radio' name='quiz1' id='1' value='1' />&nbsp&nbspA. 1.0<br><br>
+                    <input class="loc1" type='radio' name='quiz1' id='2' value='2' />&nbsp&nbspB. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz1' id='2' value='3' />&nbsp&nbspC. Error<br><br>
+                    <input class="loc1" type='radio' name='quiz1' id='2' value='4' />&nbsp&nbspD. None of these<br><br>
+            </div>
+            <div id="box">
+		<br>
+		<br>
+                    
+                   <p>&nbsp2.<span class="space">Which of the following statements are correct about the below C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                    int main()
+                    {
+                        int x = 10, y = 100%90, i;
+                        for(i=1; i&lt;10; i++)
+                        if(x != y);
+                        printf("x = %d y = %d\n", x, y);
+                        return 0;
+                    }
+                    </code></pre>
+                    <table>
+                    <tr>
+                        <td><span class="space">1 :</span></td>
+                        <td>The <i>printf()</i> function is called 10 times.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="space">2 :</span></td>
+                        <td>The program will produce the output <i>x = 10 y = 10</i></td>
+                    </tr>
+                    <tr>
+                        <td><span class="space">3 :</span></td>
+                        <td>The after the <i>if(x!=y)</i> will NOT produce an error.</td>
+                    </tr>
+                    <tr>
+                    <td><span class="space">4 :</span></td>
+                    <td>The program will not produce output.</td>
+                    </tr>
+                    </table>
+                    <br>
+                    <input class="loc1" type='radio' name='quiz2' id='1' value='1' />&nbsp&nbspA. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz2' id='2' value='2' />&nbsp&nbspB. 2,3<br><br>
+                    <input class="loc1" type='radio' name='quiz2' id='2' value='3' />&nbsp&nbspC. 3,4<br><br>
+                    <input class="loc1" type='radio' name='quiz2' id='2' value='4' />&nbsp&nbspD. 4<br><br>
+            </div>
+            <div id="box">
+		<br>
+		<br>
+                    
+                   <p>&nbsp3.<span class="space">What is the output of the following C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                    void main()
+                    {
+                        pnt a=2;
+                        printf(“%d %d%d%d%d%d”,a,++a,a++,--a,a--,a);
+                    }
+
+                    </code></pre>
+                    <br>
+                    <input class="loc1" type='radio' name='quiz3' id='1' value='1' />&nbsp&nbspA. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz3' id='2' value='2' />&nbsp&nbspB. 2,3<br><br>
+                    <input class="loc1" type='radio' name='quiz3' id='2' value='3' />&nbsp&nbspC. 3,4<br><br>
+                    <input class="loc1" type='radio' name='quiz3' id='2' value='4' />&nbsp&nbspD. 4<br><br>
+            </div>
+            <div id="box">
+		<br>
+		<br>
+                    
+                   <p>&nbsp4.<span class="space">What is the output of the following C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                     void main()
+                    {
+                        if(‘X’<’x’)
+                        {
+                            printf(“X is smaller than x”);
+                        }
+                    }
+
+                    </code></pre>
+                    
+                    <br>
+                    <input class="loc1" type='radio' name='quiz4' id='1' value='1' />&nbsp&nbspA. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz4' id='2' value='2' />&nbsp&nbspB. 2,3<br><br>
+                    <input class="loc1" type='radio' name='quiz4' id='2' value='3' />&nbsp&nbspC. 3,4<br><br>
+                    <input class="loc1" type='radio' name='quiz4' id='2' value='4' />&nbsp&nbspD. 4<br><br>
+            </div>
+            <div id="box">
+		<br>
+		<br>
+                    
+                   <p>&nbsp5.<span class="space">What is the output of the following C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                    void main()
+                    {
+                        int i=j=10;
+                        if(i&&j==10)
+                        printf(“%d%d”,i,j);
+                    }
+
+                    </code></pre>
+                    
+                    <br>
+                    <input class="loc1" type='radio' name='quiz5' id='1' value='1' />&nbsp&nbspA. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz5' id='2' value='2' />&nbsp&nbspB. 2,3<br><br>
+                    <input class="loc1" type='radio' name='quiz5' id='2' value='3' />&nbsp&nbspC. 3,4<br><br>
+                    <input class="loc1" type='radio' name='quiz5' id='2' value='4' />&nbsp&nbspD. 4<br><br>
+            </div>
+            <div id="box">
+		<br>
+		<br>
+                    
+                   <p>&nbsp6.<span class="space">What is the output of the following C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                    void main()
+                    {
+                        int i=6,j;
+                        i>=5?(j=10):(j=15);
+                        printf(“%d%d”i,j);
+                    }
+
+
+                    </code></pre>
+                   
+                    <br>
+                    <input class="loc1" type='radio' name='quiz6' id='1' value='1' />&nbsp&nbspA. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz6' id='2' value='2' />&nbsp&nbspB. 2,3<br><br>
+                    <input class="loc1" type='radio' name='quiz6' id='2' value='3' />&nbsp&nbspC. 3,4<br><br>
+                    <input class="loc1" type='radio' name='quiz6' id='2' value='4' />&nbsp&nbspD. 4<br><br>
+            </div>
+            <div id="box">
+		<br>
+		<br>
+                    
+                   <p>&nbsp7.<span class="space">What is the output of the following C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                    void main()
+                    {
+                        int i=6,j;
+                        i>=5?((i=11)&&(j=12)):(j=15);
+                        printf(“%d%d”i,j);
+                    }   
+
+                    </code></pre>
+                    
+                    <br>
+                    <input class="loc1" type='radio' name='quiz7' id='1' value='1' />&nbsp&nbspA. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz7' id='2' value='2' />&nbsp&nbspB. 2,3<br><br>
+                    <input class="loc1" type='radio' name='quiz7' id='2' value='3' />&nbsp&nbspC. 3,4<br><br>
+                    <input class="loc1" type='radio' name='quiz7' id='2' value='4' />&nbsp&nbspD. 4<br><br>
+            </div>
+            <div id="box">
+		<br>
+		<br>
+                    
+                   <p>&nbsp8.<span class="space">What is the output of the following C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                    void main()
+                    {
+                        int i=6,j;
+                        i>=5?(i=10):(j=15);
+                        printf(“%d%d”i,j);
+                    }
+
+                    </code></pre>
+                    
+                    <br>
+                    <input class="loc1" type='radio' name='quiz8' id='1' value='1' />&nbsp&nbspA. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz8' id='2' value='2' />&nbsp&nbspB. 2,3<br><br>
+                    <input class="loc1" type='radio' name='quiz8' id='2' value='3' />&nbsp&nbspC. 3,4<br><br>
+                    <input class="loc1" type='radio' name='quiz8' id='2' value='4' />&nbsp&nbspD. 4<br><br>
+            </div>
+            <div id="box">
+		<br>
+		<br>
+                    
+                   <p>&nbsp9.<span class="space">What is the output of the following C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                    void main()
+                    {
+                        int i=5;
+                        i==5?printf(“YES”):printf(“NO”);
+                    }
+
+                    </code></pre>
+                    
+                    <br>
+                    <input class="loc1" type='radio' name='quiz9' id='1' value='1' />&nbsp&nbspA. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz9' id='2' value='2' />&nbsp&nbspB. 2,3<br><br>
+                    <input class="loc1" type='radio' name='quiz9' id='2' value='3' />&nbsp&nbspC. 3,4<br><br>
+                    <input class="loc1" type='radio' name='quiz9' id='2' value='4' />&nbsp&nbspD. 4<br><br>
+            </div>
+            <div id="box">
+		<br>
+		<br>                    
+                   <p>&nbsp10.<span class="space">What is the output of the following C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                    void main()
+                    {
+                        int i=5;
+                        i==3?printf(“YES”):printf(“NO”);
+                    }
+
+                    </code></pre>
+                    
+                    <br>
+                    <input class="loc1" type='radio' name='quiz10' id='1' value='1' />&nbsp&nbspA. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz10' id='2' value='2' />&nbsp&nbspB. 2,3<br><br>
+                    <input class="loc1" type='radio' name='quiz10' id='2' value='3' />&nbsp&nbspC. 3,4<br><br>
+                    <input class="loc1" type='radio' name='quiz10' id='2' value='4' />&nbsp&nbspD. 4<br><br>
+            </div>
+            <div id="box">
+		<br>
+		<br>
+                   <p>&nbsp11.<span class="space">What is the output of the following C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                    void main()
+                    {
+                        int i=5;
+                        i=5?printf(“YES”):printf(“NO”);
+                    }
+
+                    </code></pre>
+                    
+                    <br>
+                    <input class="loc1" type='radio' name='quiz11' id='1' value='1' />&nbsp&nbspA. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz11' id='2' value='2' />&nbsp&nbspB. 2,3<br><br>
+                    <input class="loc1" type='radio' name='quiz11' id='2' value='3' />&nbsp&nbspC. 3,4<br><br>
+                    <input class="loc1" type='radio' name='quiz11' id='2' value='4' />&nbsp&nbspD. 4<br><br>
+            </div>
+            <div id="box">
+		<br>
+		<br>
+                   <p>&nbsp12.<span class="space">What is the output of the following C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                    void main()
+                    {
+                        int i=5;
+                        i=2?printf(“YES”):printf(“NO”);
+                    }
+
+                    </code></pre>
+                    
+                    <br>
+                    <input class="loc1" type='radio' name='quiz12' id='1' value='1' />&nbsp&nbspA. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz12' id='2' value='2' />&nbsp&nbspB. 2,3<br><br>
+                    <input class="loc1" type='radio' name='quiz12' id='2' value='3' />&nbsp&nbspC. 3,4<br><br>
+                    <input class="loc1" type='radio' name='quiz12' id='2' value='4' />&nbsp&nbspD. 4<br><br>
+            </div>
+            <div id="box">
+		<br>
+		<br>
+                   <p>&nbsp13.<span class="space">What is the output of the following C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                    void main()
+                    {
+                        int m=2,i,j,k;
+                        for(i=0;i<m;i++)
+                        for(j=i;j<m-1;j++)
+                        printf(“\ni=%d,j=%d”,i,j);
+                    }
+
+                    </code></pre>
+                    
+                    <br>
+                    <input class="loc1" type='radio' name='quiz13' id='1' value='1' />&nbsp&nbspA. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz13' id='2' value='2' />&nbsp&nbspB. 2,3<br><br>
+                    <input class="loc1" type='radio' name='quiz13' id='2' value='3' />&nbsp&nbspC. 3,4<br><br>
+                    <input class="loc1" type='radio' name='quiz13' id='2' value='4' />&nbsp&nbspD. 4<br><br>
+            </div>
+            <div id="box">
+		<br>
+		<br>
+                   <p>&nbsp14.<span class="space">What is the output of the following C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                    void main()
+                    {
+                        int i=1;
+                        Switch(i)
+                        {
+                            case 0: printf(“\nZero”); break;
+                            case 1: printf(“\nOne”);
+                            default: printf(“\nUndefine”);
+                        }
+                    }    
+                    </code></pre>
+                    
+                    <br>
+                    <input class="loc1" type='radio' name='quiz14' id='1' value='1' />&nbsp&nbspA. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz14' id='2' value='2' />&nbsp&nbspB. 2,3<br><br>
+                    <input class="loc1" type='radio' name='quiz14' id='2' value='3' />&nbsp&nbspC. 3,4<br><br>
+                    <input class="loc1" type='radio' name='quiz14' id='2' value='4' />&nbsp&nbspD. 4<br><br>
+            </div>
+            <div id="box">
+		<br>
+		<br>
+                   <p>&nbsp15.<span class="space">What is the output of the following C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                    void main()
+                    {
+                        int k;
+                        float j=3.5;
+                        switch(k=j+1)
+                        {
+                            case 4:  printf(“YES”);  break;
+                            case 5:   printf(“NO”);  break;
+                            default:  break;
+                        }
+                    }
+
+                    </code></pre>
+                    
+                    <br>
+                    <input class="loc1" type='radio' name='quiz15' id='1' value='1' />&nbsp&nbspA. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz15' id='2' value='2' />&nbsp&nbspB. 2,3<br><br>
+                    <input class="loc1" type='radio' name='quiz15' id='2' value='3' />&nbsp&nbspC. 3,4<br><br>
+                    <input class="loc1" type='radio' name='quiz15' id='2' value='4' />&nbsp&nbspD. 4<br><br>
+            </div>
+            <div id="box">
+		<br>
+		<br>
+                    
+                   <p>&nbsp16.<span class="space">What is the output of the following C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                    void main()
+                    {
+                        float i=1;
+                        switch(i)
+                        {
+                            case 0:  printf(“Zero”);  break;
+                            case 1:   printf(“One”);   break;
+                        }
+                    }
+
+                    </code></pre>
+                    
+                    <br>
+                    <input class="loc1" type='radio' name='quiz16' id='1' value='1' />&nbsp&nbspA. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz16' id='2' value='2' />&nbsp&nbspB. 2,3<br><br>
+                    <input class="loc1" type='radio' name='quiz16' id='2' value='3' />&nbsp&nbspC. 3,4<br><br>
+                    <input class="loc1" type='radio' name='quiz16' id='2' value='4' />&nbsp&nbspD. 4<br><br>
+            </div>
+            <div id="box">
+		<br>
+		<br>
+                    
+                   <p>&nbsp17.<span class="space">What is the output of the following C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                    void main()
+                    {
+                        int k=3;
+                        switch(k)
+                        {
+                            case 3.1:  printf(“XXX”); break;
+                            case 4:   printf(“SSS”);  break;
+                            default:   printf(“ZZZ”);
+                        }
+                    }       
+
+                    </code></pre>
+                    
+                    <br>
+                    <input class="loc1" type='radio' name='quiz17' id='1' value='1' />&nbsp&nbspA. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz17' id='2' value='2' />&nbsp&nbspB. 2,3<br><br>
+                    <input class="loc1" type='radio' name='quiz17' id='2' value='3' />&nbsp&nbspC. 3,4<br><br>
+                    <input class="loc1" type='radio' name='quiz17' id='2' value='4' />&nbsp&nbspD. 4<br><br>
+            </div>
+            <div id="box">
+		<br>
+		<br>
+                    
+                   <p>&nbsp18.<span class="space">What is the output of the following C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                    void main()
+                    {
+                        char c=127;
+                        printf(“c=%d”,c);
+                    }
+
+                    </code></pre>
+                    
+                    <br>
+                    <input class="loc1" type='radio' name='quiz18' id='1' value='1' />&nbsp&nbspA. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz18' id='2' value='2' />&nbsp&nbspB. 2,3<br><br>
+                    <input class="loc1" type='radio' name='quiz18' id='2' value='3' />&nbsp&nbspC. 3,4<br><br>
+                    <input class="loc1" type='radio' name='quiz18' id='2' value='4' />&nbsp&nbspD. 4<br><br>
+            </div>
+            <div id="box">
+		<br>
+		<br>
+                    
+                   <p>&nbsp19.<span class="space">What is the output of the following C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                    void main()
+                    {
+                        char c=128;
+                        rintf(“c=%d”,c);
+                    }
+
+                    </code></pre>
+                    
+                    <br>
+                    <input class="loc1" type='radio' name='quiz19' id='1' value='1' />&nbsp&nbspA. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz19' id='2' value='2' />&nbsp&nbspB. 2,3<br><br>
+                    <input class="loc1" type='radio' name='quiz19' id='2' value='3' />&nbsp&nbspC. 3,4<br><br>
+                    <input class="loc1" type='radio' name='quiz19' id='2' value='4' />&nbsp&nbspD. 4<br><br>
+            </div>
+            <div id="box">
+		<br>
+		<br>
+                    
+                   <p>&nbsp20.<span class="space">What is the output of the following C-program?</span>
+                    <pre  class="borderline"><code>
+                    #include&lt;stdio.h&gt;
+                    void main()
+                    {
+                        char c=130;
+                        printf(“c=%d”,c);   
+                    }
+
+                    </code></pre>
+                   
+                    <br>
+                    <input class="loc1" type='radio' name='quiz20' id='1' value='1' />&nbsp&nbspA. 1<br><br>
+                    <input class="loc1" type='radio' name='quiz20' id='2' value='2' />&nbsp&nbspB. 2,3<br><br>
+                    <input class="loc1" type='radio' name='quiz20' id='2' value='3' />&nbsp&nbspC. 3,4<br><br>
+                    <input class="loc1" type='radio' name='quiz20' id='2' value='4' />&nbsp&nbspD. 4<br><br>
+                    <input class="submit" type="submit" value="submit"><br><br><br>
+            </div> 
+	    </form>
+	</div>
+        </div>
+    		
+        <div id="boxfooter" style={margin-top:9880px;}>
+		<marquee behavior="alternate" direction="left" scrollamount="2">
+	        <b>Lessons &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Solved Questions&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Online Tests &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Tutorial Videos &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Post Your Queries &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Discuss On Queries</b>
+	        </marquee>
+	</div>
+	<br>
+	<br>
+	<br>
+        <br>
+</div>
+</div>
+</body>
+</html>
